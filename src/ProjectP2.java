@@ -7,11 +7,13 @@ public class ProjectP2 {
     public static void main(String[] args) {
 
         //Schreiben in ein File -- FileOutputStream
+        OutputStream os = null;
+        DataOutputStream dos = null;
         String filename = "test.txt";
         try {
 
-            OutputStream os = new FileOutputStream(filename);
-            DataOutputStream dos = new DataOutputStream(os);
+            os = new FileOutputStream(filename);
+            dos = new DataOutputStream(os);
             //String text = "Hallo HTW";
             //byte[] textAsByte = text.getBytes();
 
