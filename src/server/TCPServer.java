@@ -32,7 +32,7 @@ public class TCPServer {
                 System.out.println("fail");
                 System.exit(0);
             }
-
+            os.close();
             client.close();
             server.close();
 
